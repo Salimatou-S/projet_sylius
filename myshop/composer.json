@@ -1,7 +1,5 @@
 {
-    "name": "sylius/sylius-standard",
     "type": "project",
-    "description": "Starting point for projects powered by Sylius eCommerce.",
     "keywords": [
         "symfony",
         "sylius",
@@ -11,7 +9,7 @@
         "shopping"
     ],
     "homepage": "https://sylius.com",
-    "license": "MIT",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Paweł Jędrzejewski"
@@ -65,12 +63,15 @@
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/thanks": true,
+            "symfony/flex": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.11-dev"
-        },
         "symfony": {
             "allow-contrib": false
         }
